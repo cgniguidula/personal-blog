@@ -1,0 +1,157 @@
+/*******************************************/
+/**************** Media queries ************/
+/*******************************************/
+
+/* mobile formatting*/
+@media(max-width:600px){
+    .blg-container{
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+            "hd hd hd hd hd"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "ft ft ft ft ft"
+            "bio bio bio bio bio";
+    }
+
+    .blg-bio{
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+            "title title pic pic"
+            "subtitle subtitle pic pic"
+            "info info info info"
+            "info info info info"
+            "info info info info"
+            "scl scl scl scl";
+        align-items: center;
+    }
+
+    .me-pic{
+        grid-area: pic;
+        width:100%;
+        padding-top: 10%
+    }
+
+    .bio-title{
+        grid-area: title;
+        padding-top: 10%;
+        margin-bottom: 0%;
+        text-align: left;
+        font-size: var(--vds-heading-font-size-h2);
+    }
+
+    .bio-subtitle{
+        grid-area: subtitle;
+        margin-top: 0%;
+        text-align: left;
+    }
+
+    .bio-info{
+        grid-area: info;
+    }
+
+    .social{
+        grid-area: scl;
+    }
+
+}
+
+/* tablet/desktop formatting */
+@media(min-width:601px){
+    .blg-container{
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+            "hd hd hd hd hd bio bio"
+            "main main main main main bio bio"
+            "main main main main main bio bio"
+            "main main main main main bio bio"
+            "main main main main main bio bio"
+            "main main main main main bio bio"
+            "ft ft ft ft ft bio bio";
+    }
+
+    .blg-bio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .me-pic{
+        width:90%;
+        padding-top: 10%
+    }
+}
+
+/*******************************************/
+/******* Main blog layout components *******/
+/*******************************************/
+.blg-body{
+    background-image: var(--vds-gradient-silver-cerulean);
+}
+
+.blg-bio{
+    grid-area: bio;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%; 
+    background-color: var(--vds-color-cerulean-lighter);
+    
+} 
+.blg-hd{
+    grid-area: hd;
+    height: 15%;
+    background-image: var(--vds-gradient-silver-cerulean);
+    padding-left: 30px;
+}
+
+.blg-post{
+    grid-area: main;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+}
+
+.blg-ft{
+    grid-area: ft;
+    background-image: var(--vds-gradient-silver-cerulean);
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+/*******************************************/
+/******* Sidebar elements formatting *******/
+/*******************************************/
+
+.bio-info{
+    color: var(--vds-text-color);
+    font-size: var(--vds-text-font-size-sm);
+    line-height: var(--vds-text-line-height-sm);
+}
+
+/*******************************************/
+/********* Social icons formatting *********/
+/*******************************************/
+.social{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+    height: 5%;
+    padding-bottom: 5%;
+}
+
+.social-item{
+    width: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.social-img{
+    width:100%;
+}

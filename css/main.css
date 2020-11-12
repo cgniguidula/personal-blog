@@ -1,0 +1,52 @@
+@import "./all.custom-properties.css";
+@import "./home.css";
+@import "./blog.css";
+
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+.box{
+    /* border: 1px solid #014052; */
+    height: auto;
+}
+
+/*******************************************/
+/******* Generic text formatting *******/
+/*******************************************/
+
+p, h1, h2, h3, h4, h5, h6, a, blockquote{
+    font-family: var(--vds-font-family-text);
+}
+
+.blockquote{
+    font-style: italic;
+}
+
+.content{
+    font-size: var(--vds-text-font-size);
+    letter-spacing: var(--vds-letter-spacing);
+    line-height: var(--vds-text-line-height);
+}
+
+p{
+    font-weight: var(--vds-font-weight-light);
+}
+
+h1{
+    font-size: var(--vds-heading-font-size-h1);
+    color: var(--vds-text-color-information);
+}
+
+a:link{
+    color: var(--vds-color-blue-light);
+}
+
+a:visited{
+    color: var(--vds-color-blue-light);
+} 
+
+a:hover{
+    color: var(--vds-color-blue-darker);
+}
