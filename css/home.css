@@ -3,7 +3,7 @@
 /**************** Media queries ************/
 /*******************************************/
 
-@media(max-width:600px){
+@media(max-width:700px){
     .home-content{
         display: flex;
         flex-direction: column;
@@ -17,7 +17,7 @@
     }
 }
 
-@media(min-width:601px){
+@media(min-width:700px){
     .home-content{
         display: grid;
         grid-template-columns: 40% 40%;

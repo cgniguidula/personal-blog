@@ -2,11 +2,10 @@
 @import "./home.css";
 @import "./blog.css";
 
-body{
-    height: 100%;
-    width: 100%;
-    padding: 0;
-}
+/*******************************************/
+/**************** Media queries ************/
+/*******************************************/
+
 .box{
     /* border: 1px solid #014052; */
     height: auto;
@@ -16,7 +15,7 @@ body{
 /******* Generic text formatting *******/
 /*******************************************/
 
-p, h1, h2, h3, h4, h5, h6, a, blockquote{
+p, h1, h2, h3, h4, h5, h6, a, figcaption, blockquote{
     font-family: var(--vds-font-family-text);
 }
 
